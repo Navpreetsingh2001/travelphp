@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Package Booking</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" style="height: 10vh;" alt="">
+                <a href="index.php">Trip Scholars</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="Packages.html">Packages</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                
+                <button class="btn2">Register</button>
+                
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Package Details Section -->
+    <section class="package-details">
+        <h1>Discover Kerala - 7 Days</h1>
+       
+        <p>
+            Enjoy a 7-day tour of Kerala’s backwaters, serene beaches, and lush greenery. This package includes:
+        </p>
+        <ul>
+            <li>Stay in a luxury hotel</li>
+            <li>Daily breakfast and dinner</li>
+            <li>Guided tours to popular tourist spots</li>
+            <li>Boat ride in the backwaters</li>
+            <li>Complimentary airport pick-up and drop</li>
+        </ul>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section class="booking-form">
+        <div class="package-detail-img">
+            <div class="package-img1">
+                <img src="images/kerelepackages.jpg" alt="">
+            </div>
+            <div class="package-img2">
+                <img src="images/k2.jpg" alt="">
+            </div>
+
+        </div>
+        <div class="package-right">
+
+            <h2>Book Your Package</h2>
+            <form action="in2.php" method="post">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="Name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="Email" required>
+    
+                <label for="package">Select Package:</label>
+                <select id="package" name="Package" required>
+                    <option value="kerala">Discover Kerala - 7 Days</option>
+                    <option value="goa">Explore Goa - 5 Days</option>
+                    <option value="rajasthan">Rajasthan Heritage - 10 Days</option>
+                </select>
+    
+                <label for="travel_date">Travel Date:</label>
+                <input type="date" id="travel_date" name="Travel_date" required>
+    
+                <label for="people">Number of People:</label>
+                <input type="number" id="people" name="People" min="1" required>
+    
+                <label for="comments">Additional Requests (Optional):</label>
+                <textarea id="comments" name="Comments" rows="4"></textarea>
+    
+                <button type="submit">Book Now</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Travel Together. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
